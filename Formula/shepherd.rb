@@ -1,8 +1,8 @@
 class Shepherd < Formula
   desc "Interactive todo board backed by a markdown file"
   homepage "https://github.com/jwarykowski/shepherd"
-  url "https://github.com/jwarykowski/shepherd/archive/refs/tags/v0.17.0.tar.gz"
-  sha256 "27a4b5e45f71beff3a92b2e5b2df5ae2545e8aed45b6b64b8a0311ae481f4428"
+  url "https://github.com/jwarykowski/shepherd/archive/refs/tags/v0.18.0.tar.gz"
+  sha256 "81d538c441f07a50daba297793d37ab12aae576853dba2563f4b05149bf8c869"
   license "MIT"
   head "https://github.com/jwarykowski/shepherd.git", branch: "master"
 
