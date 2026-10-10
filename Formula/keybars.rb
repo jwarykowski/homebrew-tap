@@ -15,9 +15,9 @@ class Keybars < Formula
 
   def caveats
     <<~EOS
-      keybars drives ZSA keyboards through Keymapp: start Keymapp and enable
-      its API. On macOS, cava needs a loopback device such as BlackHole to
-      hear what the system plays.
+      See https://github.com/jwarykowski/keybars for supported keyboards and
+      their setup. On macOS, cava needs a loopback device such as BlackHole
+      to hear what the system plays.
     EOS
   end
 
