@@ -20,6 +20,7 @@ brew install <formula>
 
 | Formula | Description |
 | --- | --- |
+| [keybars](https://github.com/jwarykowski/keybars) | Music equaliser on your keyboard's backlight |
 | [shepherd](https://github.com/jwarykowski/shepherd) | Interactive todo board backed by a markdown file |
 
 ## Notes
