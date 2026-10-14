@@ -18,12 +18,19 @@ brew install <formula>
 
 ## Formulae
 
-| Formula | Description |
-| --- | --- |
-| [shepherd](https://github.com/jwarykowski/shepherd) | Interactive todo board backed by a markdown file |
+| Formula | Description | Installs |
+| --- | --- | --- |
+| [shepherd](https://github.com/jwarykowski/shepherd) | Interactive todo board backed by a markdown file | built from source |
+| [shepherd-alpha](https://shepherdcli.dev) | Shepherd alpha: the todo board, plus sending tasks to your coding agent (pulls in drover) | built from source |
+| [drover](https://shepherdcli.dev) | Hands Shepherd tasks and other events to your coding agent | prebuilt binary |
+| [keybars](https://github.com/jwarykowski/keybars) | Music equaliser on your keyboard's backlight (pulls in cava) | prebuilt binary |
 
 ## Notes
 
-- Formulae build from source and pull in their build toolchain automatically.
-- Track a project's development tip instead of its latest release:
-  `brew install --HEAD jwarykowski/tap/<formula>`.
+- `shepherd` and `shepherd-alpha` both install a `shepherd` binary, so only
+  one can be installed at a time.
+- Formulae built from source pull in their build toolchain automatically.
+- Track shepherd's development tip instead of its latest release:
+  `brew install --HEAD jwarykowski/tap/shepherd`.
+- Release workflows in each project open a pull request here with the new
+  version, so formulae track their latest release.
