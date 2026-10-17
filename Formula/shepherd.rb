@@ -7,9 +7,17 @@ class Shepherd < Formula
   head "https://github.com/jwarykowski/shepherd.git", branch: "master"
 
   depends_on "go" => :build
+  depends_on "jwarykowski/tap/drover" # runs your coding agent on board items
 
   def install
     system "go", "build", *std_go_args(ldflags: "-s -w")
+  end
+
+  def caveats
+    <<~EOS
+      To hand tasks to your coding agent (Claude Code or Codex):
+        shepherd agents setup
+    EOS
   end
 
   test do
