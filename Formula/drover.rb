@@ -5,21 +5,21 @@
 class Drover < Formula
   desc "Hands Shepherd tasks and other events to your coding agent"
   homepage "https://shepherdcli.dev"
-  version "0.2.0"
+  version "0.3.0"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jwarykowski/homebrew-tap/releases/download/v0.2.0/drover_0.2.0_darwin_amd64.tar.gz"
-      sha256 "aeee9064140521fc6d5bf3f0ab644f52333cd52d84bcba461ab20c615422b366"
+      url "https://github.com/jwarykowski/homebrew-tap/releases/download/v0.3.0/drover_0.3.0_darwin_amd64.tar.gz"
+      sha256 "0967e7a6582867ebdea2c4136ef09b035515a26697b5dc966e5d946651227b24"
 
       define_method(:install) do
         bin.install "drover"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jwarykowski/homebrew-tap/releases/download/v0.2.0/drover_0.2.0_darwin_arm64.tar.gz"
-      sha256 "86a903c0155d8ef1530819c9cbf0f87ba645fe6a1c8a06d685b340aa6185523e"
+      url "https://github.com/jwarykowski/homebrew-tap/releases/download/v0.3.0/drover_0.3.0_darwin_arm64.tar.gz"
+      sha256 "62f7094d37e8ad86f474edca482dc46c3a98936b6ee438070f8517b80dd68a4c"
 
       define_method(:install) do
         bin.install "drover"
@@ -29,15 +29,15 @@ class Drover < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jwarykowski/homebrew-tap/releases/download/v0.2.0/drover_0.2.0_linux_amd64.tar.gz"
-      sha256 "f3f8fc6eadc6d8dcd85951cd8191020c73a7cc082e6d6be83a6ca077f7375662"
+      url "https://github.com/jwarykowski/homebrew-tap/releases/download/v0.3.0/drover_0.3.0_linux_amd64.tar.gz"
+      sha256 "bb0e29a5db7a2308cd62a907cc037414862e6f3fe2df2e64c6e6b8a3db0ca6a8"
       define_method(:install) do
         bin.install "drover"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jwarykowski/homebrew-tap/releases/download/v0.2.0/drover_0.2.0_linux_arm64.tar.gz"
-      sha256 "ac1fd6c351224b99e76ebdfdf49a7d1393a570495565cab36518d6f882def65c"
+      url "https://github.com/jwarykowski/homebrew-tap/releases/download/v0.3.0/drover_0.3.0_linux_arm64.tar.gz"
+      sha256 "e5a85448b486919b8cca623106cf2ab6be150cdc80ff2c0a05bac160f2fb750d"
       define_method(:install) do
         bin.install "drover"
       end
