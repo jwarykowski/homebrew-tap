@@ -5,23 +5,23 @@
 class Keybars < Formula
   desc "Music equaliser on your keyboard's backlight"
   homepage "https://keybars.app/"
-  version "0.5.7"
+  version "0.5.8"
   license "MIT"
 
   depends_on "cava"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jwarykowski/keybars/releases/download/v0.5.7/keybars_0.5.7_darwin_amd64.tar.gz"
-      sha256 "e283ec3e5fccf6e068d21c0f14dbcae99ea2e7380e33178da45183969024ae25"
+      url "https://github.com/jwarykowski/keybars/releases/download/v0.5.8/keybars_0.5.8_darwin_amd64.tar.gz"
+      sha256 "2f07f650ebe0ca06b8df84c74b65040916c251f36f293cb6ba2ca2bd5ff8f601"
 
       define_method(:install) do
         bin.install "keybars"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jwarykowski/keybars/releases/download/v0.5.7/keybars_0.5.7_darwin_arm64.tar.gz"
-      sha256 "51beae5bd89125de952500ecd97799e7e3d84df5c2a690220e0c28e0d01c58b9"
+      url "https://github.com/jwarykowski/keybars/releases/download/v0.5.8/keybars_0.5.8_darwin_arm64.tar.gz"
+      sha256 "674089a077297424fffb94fb90c7a5203da0f82cb7d7051ac2d1cc701a319163"
 
       define_method(:install) do
         bin.install "keybars"
@@ -31,15 +31,15 @@ class Keybars < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jwarykowski/keybars/releases/download/v0.5.7/keybars_0.5.7_linux_amd64.tar.gz"
-      sha256 "e84621d3fa6ecb8b2d5b9b12ceb7c23601884e9340c6a45e5d548581dc53883b"
+      url "https://github.com/jwarykowski/keybars/releases/download/v0.5.8/keybars_0.5.8_linux_amd64.tar.gz"
+      sha256 "a93dab2a67bf4d990fb1fdc344529f9b9c207a7df0db79b5def861cace7be90f"
       define_method(:install) do
         bin.install "keybars"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jwarykowski/keybars/releases/download/v0.5.7/keybars_0.5.7_linux_arm64.tar.gz"
-      sha256 "803d26a6a86aeaeb8fc3e9c8e1a2bae12645b9abd1cece677d8fadc3b3d459d4"
+      url "https://github.com/jwarykowski/keybars/releases/download/v0.5.8/keybars_0.5.8_linux_arm64.tar.gz"
+      sha256 "c456ecae7604df35361ffa21a755158ecaa99c0794be0a084ce2fcdbee777cbd"
       define_method(:install) do
         bin.install "keybars"
       end
